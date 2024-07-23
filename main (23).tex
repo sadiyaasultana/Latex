@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[l]{latex }
+\fancyhead[r]{sadiya sultana}
+\fancyhead[c]{Program No.11 }
+\fancyfoot[l]{Dept of ISE,CIT}
+\fancyfoot[r]{2023-24 \quad \thepage}
+\begin{document}
+\begin{algorithm}
+\caption{Euclid's algorithm}
+\label{euclid}
+\begin{algorithmic}[1]% 1means line numbering
+\REQUIRE TWO NON-NEGATIVE INTEGERS $a$ $b$ where $a \geq b$
+\ENSURE:$d = gcd(a,b)$
+\STATE $r \gets a \bmod b$
+\WHILE{$r \neq 0$}
+\STATE$a \gets r$
+\STATE$b \gets r$
+\STATE$r \gets a$
+\ENDWHILE
+\RETURN$b$
+\end{algorithmic}
+\end{algorithm}
+\end{document}
