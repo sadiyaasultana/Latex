@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{tikz} 
+\usetikzlibrary{graphs.standard}
+\usepackage{fancyhdr} 
+\fancyhead[l]{LATEX}
+\fancyhead[r]{sadiya sultana}
+\fancyhead[C]{PROGRAM 6}
+\fancyfoot{} 
+\fancyfoot[L]{Dept of ISE,CIT GUBBI} 
+\fancyfoot[R]{2023-2024 \quad \thepage}
+\pagestyle{fancy} 
+\begin{document}
+\begin{tikzpicture}
+\graph[nodes={circle,draw},simple] 
+{
+subgraph K_n [n=8,clockwise];
+};
+\end{tikzpicture} 
+\begin{tikzpicture} 
+\graph[nodes={circle,draw},simple] 
+{ 
+subgraph K_n [n=8, clockwise] -> mid;
+};
+\end{tikzpicture} 
+\begin{tikzpicture}
+\graph[nodes={circle,draw},simple] 
+{
+subgraph K_n [n=8,clockwise];
+8 -!- 3 -!- 4 -!- 5 -!- 2;
+}; 
+\end{tikzpicture}
+\end{document}
